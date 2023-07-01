@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/usb",
+		"source" : "/home/aeris/esp/esp-idf/components/usb"
+	}
+}

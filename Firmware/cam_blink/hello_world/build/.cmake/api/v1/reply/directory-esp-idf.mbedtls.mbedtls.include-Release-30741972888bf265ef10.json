@@ -1,0 +1,136 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/mbedtls",
+			"paths" : 
+			[
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aria.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1write.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/camellia.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chacha20.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chachapoly.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cmac.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/compat-2.x.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/constant_time.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/debug.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/des.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/dhm.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdh.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecjpake.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/gcm.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hkdf.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md5.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/memory_buffer_alloc.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/nist_kw.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pem.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pk.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs12.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs5.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/poly1305.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/psa_util.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ripemd160.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_cache.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/threading.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/timing.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/version.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_csr.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/psa",
+			"paths" : 
+			[
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_composites.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_primitives.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_compat.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_config.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_common.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_composites.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_primitives.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_extra.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_platform.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_se_driver.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_sizes.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_struct.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_types.h",
+				"/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_values.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "esp-idf/mbedtls/mbedtls/include",
+		"source" : "/home/aeris/esp/esp-idf/components/mbedtls/mbedtls/include"
+	}
+}
