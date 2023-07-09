@@ -1,0 +1,183 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Comparator:LMV331 OA1
+U 1 1 64A49A08
+P 2800 5500
+F 0 "OA1" H 3144 5546 50  0000 L CNN
+F 1 "LMV331" H 3144 5455 50  0001 L CNN
+F 2 "" H 2800 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmv331.pdf" H 2800 5700 50  0001 C CNN
+	1    2800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US POT1
+U 1 1 64A4A90A
+P 1600 5400
+F 0 "POT1" H 1533 5446 50  0000 R CNN
+F 1 "10k" H 1533 5355 50  0000 R CNN
+F 2 "" H 1600 5400 50  0001 C CNN
+F 3 "~" H 1600 5400 50  0001 C CNN
+	1    1600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64A5002E
+P 2700 5800
+F 0 "#PWR?" H 2700 5550 50  0001 C CNN
+F 1 "GND" H 2705 5627 50  0000 C CNN
+F 2 "" H 2700 5800 50  0001 C CNN
+F 3 "" H 2700 5800 50  0001 C CNN
+	1    2700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64A5A1A3
+P 1600 5250
+F 0 "#PWR?" H 1600 5100 50  0001 C CNN
+F 1 "+3V3" H 1615 5423 50  0000 C CNN
+F 2 "" H 1600 5250 50  0001 C CNN
+F 3 "" H 1600 5250 50  0001 C CNN
+	1    1600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64A7191F
+P 1600 5550
+F 0 "#PWR?" H 1600 5300 50  0001 C CNN
+F 1 "GND" H 1605 5377 50  0000 C CNN
+F 2 "" H 1600 5550 50  0001 C CNN
+F 3 "" H 1600 5550 50  0001 C CNN
+	1    1600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5600 2500 5600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64A79468
+P 2700 5200
+F 0 "#PWR?" H 2700 5050 50  0001 C CNN
+F 1 "+3V3" H 2715 5373 50  0000 C CNN
+F 2 "" H 2700 5200 50  0001 C CNN
+F 3 "" H 2700 5200 50  0001 C CNN
+	1    2700 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5400 2500 5400
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 64A89F69
+P 2200 6600
+F 0 "J1" V 2127 6528 50  0000 C CNN
+F 1 "J1" V 2036 6528 50  0001 C CNN
+F 2 "" H 2200 6600 50  0001 C CNN
+F 3 "~" H 2200 6600 50  0001 C CNN
+	1    2200 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Network10_US DAC1
+U 1 1 64A8D81D
+P 2400 6200
+F 0 "DAC1" H 2888 6246 50  0000 L CNN
+F 1 "R_Network10_US" H 2888 6155 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP11" V 2975 6200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2400 6200 50  0001 C CNN
+	1    2400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64A927B4
+P 2800 6400
+F 0 "#PWR?" H 2800 6150 50  0001 C CNN
+F 1 "GND" H 2805 6227 50  0000 C CNN
+F 2 "" H 2800 6400 50  0001 C CNN
+F 3 "" H 2800 6400 50  0001 C CNN
+	1    2800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64A92DE1
+P 3000 6500
+F 0 "#PWR?" H 3000 6350 50  0001 C CNN
+F 1 "+3V3" H 3015 6673 50  0000 C CNN
+F 2 "" H 3000 6500 50  0001 C CNN
+F 3 "" H 3000 6500 50  0001 C CNN
+	1    3000 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6500 3000 6700
+Wire Wire Line
+	3000 6700 2700 6700
+Wire Wire Line
+	2700 6700 2700 6400
+Wire Wire Line
+	1900 6000 1900 5600
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 64B8D82A
+P 4100 6900
+F 0 "J2" V 4254 6612 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 4163 6612 50  0001 R CNN
+F 2 "" H 4100 6900 50  0001 C CNN
+F 3 "~" H 4100 6900 50  0001 C CNN
+	1    4100 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64B90292
+P 4450 6550
+F 0 "#PWR?" H 4450 6300 50  0001 C CNN
+F 1 "GND" H 4455 6377 50  0000 C CNN
+F 2 "" H 4450 6550 50  0001 C CNN
+F 3 "" H 4450 6550 50  0001 C CNN
+	1    4450 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64B91677
+P 4200 6700
+F 0 "#PWR?" H 4200 6550 50  0001 C CNN
+F 1 "+3V3" H 4215 6873 50  0000 C CNN
+F 2 "" H 4200 6700 50  0001 C CNN
+F 3 "" H 4200 6700 50  0001 C CNN
+	1    4200 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6550 4300 6550
+Wire Wire Line
+	4300 6550 4300 6700
+Text GLabel 4000 6700 1    50   Input ~ 0
+HS
+Wire Wire Line
+	3100 5500 3350 5500
+Wire Wire Line
+	3350 5500 3350 5350
+Text GLabel 4100 6700 1    50   Input ~ 0
+XO
+$EndSCHEMATC

@@ -1,0 +1,48 @@
+DAC1:
+    info: converts pixel intensity digital output from OV7670 camera to analog input to OA1
+
+    inputs from: OV7670 camera
+    outputs to: OA1
+    inputs: D[0-7] [0-Vdd]
+    outputs: D [0-Vdd]
+
+    Component selection:
+        Must not load the OV7670 camera's pin beyond their capacity. The camera pins' specs:
+            Vdd = 3.3 V
+            V > 0.9 * Vdd = 2.97 V (worst case in terms of loading is 3.3 V)
+            I > 8 mA
+            R_loading_max = V/I = 3.3 V / 8 mA = 3300/8 = 400 Ohm
+        10k R2R converter 4610X-R2R-103LF works
+
+OA1:
+    info: compares D from DAC1 and Dmin from POT1 to give outcome A, A = (Dmin > D)
+
+    inputs from: DAC1
+    outputs to: MCU through J2
+    inputs: D [0-Vdd], Dmin [0-Vdd]
+
+    Component selection:
+        Must work at an order higher than the camera's pixel output rate.Must have a slew rate high enough 
+        to change the output A within an order smaller than the period. Must not require a current higher
+        than what the camera can output (the pot can output higher than the camera). Voltage span should be higher
+        than supply. The camera's specs:
+            Bandwidth: PCLK_rate = 30 fps * (720 * 480 pixels) = 10.368 MHz => > 100 MHz
+            Slew rate: PCLK_slew_rate = Vdd * f = 3.3 V * 100 MHz = 330 V/us => > 3300 V/us
+            Bias current: < 8 mA
+            Vspan: Vdd = 3.3 V => > 3.3 V
+        EL5165IW-T7 works
+
+POT1:
+    info: gives a voltage output to DAC1 as Dmin
+
+    inputs from: None
+    outputs to: OA1
+    inputs: None
+    outputs: Dmin
+
+    component selection:
+        Must not load the supply rail unreasonably
+        10k pot works
+
+
+            

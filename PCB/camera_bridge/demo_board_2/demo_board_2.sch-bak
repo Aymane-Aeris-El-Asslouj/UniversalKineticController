@@ -1,0 +1,309 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT_US POT1
+U 1 1 64A4A90A
+P 3900 1700
+F 0 "POT1" H 3833 1746 50  0000 R CNN
+F 1 "10k" H 3833 1655 50  0000 R CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "~" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64A5002E
+P 5000 1900
+F 0 "#PWR?" H 5000 1650 50  0001 C CNN
+F 1 "GND" H 5005 1727 50  0000 C CNN
+F 2 "" H 5000 1900 50  0001 C CNN
+F 3 "" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64A5A1A3
+P 3900 1550
+F 0 "#PWR?" H 3900 1400 50  0001 C CNN
+F 1 "+3V3" H 3915 1723 50  0000 C CNN
+F 2 "" H 3900 1550 50  0001 C CNN
+F 3 "" H 3900 1550 50  0001 C CNN
+	1    3900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64A7191F
+P 3900 1850
+F 0 "#PWR?" H 3900 1600 50  0001 C CNN
+F 1 "GND" H 3905 1677 50  0000 C CNN
+F 2 "" H 3900 1850 50  0001 C CNN
+F 3 "" H 3900 1850 50  0001 C CNN
+	1    3900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64A79468
+P 5000 1300
+F 0 "#PWR?" H 5000 1150 50  0001 C CNN
+F 1 "+3V3" H 5015 1473 50  0000 C CNN
+F 2 "" H 5000 1300 50  0001 C CNN
+F 3 "" H 5000 1300 50  0001 C CNN
+	1    5000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1600 5650 1600
+Text GLabel 7350 2150 2    50   Input ~ 0
+D0
+Text GLabel 6850 2150 0    50   Input ~ 0
+D1
+Text GLabel 7350 2050 2    50   Input ~ 0
+D2
+Text GLabel 7350 1950 2    50   Input ~ 0
+D4
+Text GLabel 6850 1950 0    50   Input ~ 0
+D5
+Text GLabel 6850 2050 0    50   Input ~ 0
+D3
+Text GLabel 6850 1850 0    50   Input ~ 0
+D7
+Text GLabel 7350 1850 2    50   Input ~ 0
+D6
+Text GLabel 6850 2250 0    50   Input ~ 0
+RST
+Text GLabel 7350 2250 2    50   Input ~ 0
+PWNN
+Text GLabel 6850 1750 0    50   Input ~ 0
+PCLK
+Text GLabel 7350 1750 2    50   Input ~ 0
+MCLK
+Text GLabel 6850 1650 0    50   Input ~ 0
+VS
+Text GLabel 7350 1650 2    50   Input ~ 0
+HS
+Text GLabel 6850 1550 0    50   Input ~ 0
+SCL
+Text GLabel 7350 1550 2    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR?
+U 1 1 64F2497A
+P 7650 1450
+F 0 "#PWR?" H 7650 1200 50  0001 C CNN
+F 1 "GND" H 7655 1277 50  0000 C CNN
+F 2 "" H 7650 1450 50  0001 C CNN
+F 3 "" H 7650 1450 50  0001 C CNN
+	1    7650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64F24EFB
+P 6400 1450
+F 0 "#PWR?" H 6400 1300 50  0001 C CNN
+F 1 "+3V3" H 6415 1623 50  0000 C CNN
+F 2 "" H 6400 1450 50  0001 C CNN
+F 3 "" H 6400 1450 50  0001 C CNN
+	1    6400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1450 7350 1450
+Wire Wire Line
+	6850 1450 6400 1450
+$Comp
+L Device:R_Network09_US DAC1
+U 1 1 64F51CA5
+P 3800 1150
+F 0 "DAC1" H 3320 1104 50  0000 R CNN
+F 1 "10k" H 3320 1195 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 4375 1150 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/R2R.pdf" H 3800 1150 50  0001 C CNN
+	1    3800 1150
+	-1   0    0    1   
+$EndComp
+Text GLabel 3500 950  1    50   Input ~ 0
+D0
+Text GLabel 3600 950  1    50   Input ~ 0
+D1
+Text GLabel 3700 950  1    50   Input ~ 0
+D2
+Text GLabel 3800 950  1    50   Input ~ 0
+D3
+Text GLabel 3900 950  1    50   Input ~ 0
+D4
+Text GLabel 4000 950  1    50   Input ~ 0
+D5
+Text GLabel 4100 950  1    50   Input ~ 0
+D6
+Text GLabel 4200 950  1    50   Input ~ 0
+D7
+$Comp
+L power:GND #PWR?
+U 1 1 64A927B4
+P 3050 950
+F 0 "#PWR?" H 3050 700 50  0001 C CNN
+F 1 "GND" H 3055 777 50  0000 C CNN
+F 2 "" H 3050 950 50  0001 C CNN
+F 3 "" H 3050 950 50  0001 C CNN
+	1    3050 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 1600 2    50   Input ~ 0
+A
+Text GLabel 6400 2900 1    50   Input ~ 0
+VS
+Text GLabel 6500 2900 1    50   Input ~ 0
+PCLK
+Text GLabel 6700 2900 1    50   Input ~ 0
+SCL
+Text GLabel 6800 2900 1    50   Input ~ 0
+SDA
+Text GLabel 6900 2900 1    50   Input ~ 0
+A
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64F89154
+P 6300 2900
+F 0 "#PWR?" H 6300 2750 50  0001 C CNN
+F 1 "+3V3" H 6315 3073 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64F8A1BB
+P 6100 2900
+F 0 "#PWR?" H 6100 2650 50  0001 C CNN
+F 1 "GND" H 6105 2727 50  0000 C CNN
+F 2 "" H 6100 2900 50  0001 C CNN
+F 3 "" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2900 6200 2900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64F9836C
+P 8100 2200
+F 0 "#PWR?" H 8100 2050 50  0001 C CNN
+F 1 "+3V3" H 8115 2373 50  0000 C CNN
+F 2 "" H 8100 2200 50  0001 C CNN
+F 3 "" H 8100 2200 50  0001 C CNN
+	1    8100 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 2200 3    50   Input ~ 0
+RST
+Text GLabel 8300 2200 1    50   Input ~ 0
+PWNN
+$Comp
+L power:GND #PWR?
+U 1 1 64F9932F
+P 8300 2200
+F 0 "#PWR?" H 8300 1950 50  0001 C CNN
+F 1 "GND" H 8305 2027 50  0000 C CNN
+F 2 "" H 8300 2200 50  0001 C CNN
+F 3 "" H 8300 2200 50  0001 C CNN
+	1    8300 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 2900 1    50   Input ~ 0
+D0
+Text GLabel 7450 2900 1    50   Input ~ 0
+D1
+Text GLabel 7550 2900 1    50   Input ~ 0
+D2
+Text GLabel 7650 2900 1    50   Input ~ 0
+D3
+Text GLabel 7750 2900 1    50   Input ~ 0
+D4
+Text GLabel 7850 2900 1    50   Input ~ 0
+D5
+Text GLabel 7950 2900 1    50   Input ~ 0
+D6
+Text GLabel 8050 2900 1    50   Input ~ 0
+D7
+Text GLabel 4550 1500 1    50   Input ~ 0
+D
+Text GLabel 4100 1700 1    50   Input ~ 0
+Dmin
+Text GLabel 8150 2900 1    50   Input ~ 0
+D
+Text GLabel 8250 2900 1    50   Input ~ 0
+Dmin
+Text GLabel 6600 2900 1    50   Input ~ 0
+MCLK
+$Comp
+L Connector_Generic:Conn_01x10 J3
+U 1 1 64FC1282
+P 7850 3100
+F 0 "J3" V 7975 3046 50  0000 C CNN
+F 1 "debug_output_to_mcu" V 8066 3046 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 7850 3100 50  0001 C CNN
+F 3 "~" H 7850 3100 50  0001 C CNN
+	1    7850 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 1500 4200 1350
+Wire Wire Line
+	3050 950  3400 950 
+Wire Wire Line
+	4050 1700 4800 1700
+$Comp
+L Aeris_lib_test:EL5165_Aeris OA1
+U 1 1 64A49A08
+P 5000 1050
+F 0 "OA1" H 5344 1096 50  0000 L CNN
+F 1 "LMV331" H 5344 1005 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5000 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmv331.pdf" H 5000 1250 50  0001 C CNN
+	1    5000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 64FC026F
+P 6600 3100
+F 0 "J2" V 6750 3000 50  0000 L CNN
+F 1 "output_to_mcu" V 6850 2800 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6600 3100 50  0001 C CNN
+F 3 "~" H 6600 3100 50  0001 C CNN
+	1    6600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J1
+U 1 1 64F1D794
+P 7050 1850
+F 0 "J1" H 7100 2467 50  0000 C CNN
+F 1 "input_from_camera" H 7100 2376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 7050 1850 50  0001 C CNN
+F 3 "~" H 7050 1850 50  0001 C CNN
+	1    7050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1500 4800 1500
+$EndSCHEMATC

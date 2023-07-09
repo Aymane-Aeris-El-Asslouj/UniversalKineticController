@@ -1,0 +1,33 @@
+The system processes data from a camera pixel by pixel:
+    frame_rate = 30 frames per second
+    resolution = 720 * 480 resolution
+    Data processing clock frequency = frame_rate * resolution = 10.368 MHz
+    Data processing clock period ~= 96.45 ns
+
+Information flow of the circuit:
+
+    Just before processing a line:
+        HS resets REGx to 0 (value will be off by 1 since it has a layer of buffers)
+        HS enables Q3 which empties C2 to ground through R3
+        HS enables Q4 which empties C1 to ground through R4
+
+    While processing a line:
+        Just before a clock rising edge:
+            C2's value is presented as X through OA3
+            D[0-7] containing the pixel intensity get converted by the R2R ladder DAC1 to analog voltage D
+            POT1 outputs voltage Dref
+            D gets compared to Dref by comparator OA1 to get control signal A
+
+        On a rising edge of the clock and during clock high:
+            REGx's value gets incremented
+            x[0-7] containing the pixel's x position get converted by the R2R ladder DAC2 to analog voltage x
+            The new weighted average of x and X gets computed by the variable voltage dividers R1 - Rvar1 and R2 - Rvar2 to get Xnew
+            If A is high, AND1 outputs enables Q1 such that Xnew is stored in C1 through Q1, otherwise, C1 stays the same
+
+        On a falling edge of the clock and during clock low:
+            INV1 outputs high as PCLK is low and enables Q2
+            The voltage of C1 gets stored in C2 through Q2 and OP2
+
+Concerns:
+    C1 and C2 leaking their voltage values when they're supposed to stay constant (unlikely since ~90 ns period)
+
